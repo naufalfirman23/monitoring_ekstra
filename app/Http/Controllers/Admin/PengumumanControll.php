@@ -86,9 +86,11 @@ class PengumumanControll extends Controller
             if ($pengumuman->gambar && Storage::exists($pengumuman->gambar)) {
                 Storage::delete($pengumuman->gambar);
             }
-
+            $file = $request->file('gambar');
             // Simpan gambar baru
-            $gambarPath = $request->file('gambar')->store('public/pengumuman');
+            $fileName = $file->getClientOriginalName(); 
+            $file->storeAs('public/pengumuman', $fileName);
+            $gambarPath = 'storage/pengumuman/' . $fileName;
             $pengumuman->gambar = $gambarPath;
         }
 

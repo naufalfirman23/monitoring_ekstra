@@ -4,8 +4,11 @@
         <i data-feather="menu"></i>
     </button>
 
-    <!-- Nama Brand -->
+    @if(Auth::check() && Auth::user()->role === 'guru')
+    <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="/guru">Mandaku</a>
+    @elseif(Auth::check() && Auth::user()->role === 'admin')
     <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="/admin">Mandaku</a>
+    @endif
 
     <!-- Search Bar -->
     <form class="form-inline me-auto d-none d-lg-block me-3">

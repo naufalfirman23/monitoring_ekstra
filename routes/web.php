@@ -54,6 +54,7 @@ Route::prefix('admin')->middleware(['auth', 'role:admin'])->name('admin.')->grou
 
 Route::get('/guru', [MainControllGuru::class, 'index'])->name('guru.dashboard')->middleware(['auth', 'role:guru']);
 
+Route::get('/pengumuman/{id}', [MainControllGuru::class, 'show'])->name('pengumuman.show');
 
 Route::middleware(['auth', 'role:guru'])->prefix('guru')->name('guru.kelas.')->group(function () {
     Route::get('/kelas', [KelasController::class, 'index'])->name('index');

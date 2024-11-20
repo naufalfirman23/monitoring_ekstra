@@ -11,12 +11,14 @@
                     Alerts
                     <span class="badge bg-warning-soft text-warning ms-auto">4 New!</span>
                 </a>
-                <a class="nav-link d-sm-none" href="#!">
+                <a class="nav-link d-sm-none" href="/guru">
                     <div class="nav-link-icon"><i data-feather="mail"></i></div>
                     Messages
                     <span class="badge bg-success-soft text-success ms-auto">2 New!</span>
                 </a>
-                <div class="sidenav-menu-heading fs-3 text-center text-white">{{ Auth::user()->name }} </div>
+                <a href="/guru">
+                    <div class="sidenav-menu-heading fs-3 text-center text-white">{{ Auth::user()->name }} </div>
+                </a>
                 
                 <!-- Menu Item Kelola Ekstrakurikuler -->
                 <a class="nav-link collapsed text-white bg-light-hover" href="/guru/kelas" data-bs-toggle="collapse" data-bs-target="#collapseEkstrakurikuler" aria-expanded="false" aria-controls="collapseEkstrakurikuler">
@@ -56,7 +58,9 @@
                     Messages
                     <span class="badge bg-success-soft text-success ms-auto">2 New!</span>
                 </a>
-                <div class="sidenav-menu-heading fs-3 text-center text-white">Admin</div>
+                <a class="nav-link d-sm-none" href="/admin">
+                    <div class="sidenav-menu-heading fs-3 text-center text-white">Admin</div>
+                </a>
                 
                 <!-- Menu Item Kelola Ekstrakurikuler -->
                 <a class="nav-link collapsed text-white bg-light-hover" href="/admin/ekstrakurikuler" data-bs-toggle="collapse" data-bs-target="#collapseEkstrakurikuler" aria-expanded="false" aria-controls="collapseEkstrakurikuler">
