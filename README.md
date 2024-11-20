@@ -1,4 +1,4 @@
-# 🎯 **Sistem Monitoring Ekstrakurikuler**
+# 🎯 **Admin dan API Monitoring Ekstrakurikuler**
 
 Sistem Monitoring Ekstrakurikuler adalah aplikasi berbasis web yang dirancang untuk mempermudah pengelolaan data kehadiran siswa dalam kegiatan ekstrakurikuler. Dengan sistem ini, guru dapat memantau aktivitas siswa, mencatat kehadiran, memberikan izin, hingga merekapitulasi data secara efisien.
 
@@ -26,4 +26,4 @@ Sistem Monitoring Ekstrakurikuler adalah aplikasi berbasis web yang dirancang un
 ## 🚀 **Cara Instalasi**
 1. Clone repository ini:
    ```bash
-   git clone https://github.com/username/sistem-monitoring-ekstrakurikuler.git
+   git clone https://github.com/naufalfirman23/monitoring_ekstra.git
