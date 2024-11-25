@@ -30,6 +30,7 @@ class SiswaControll extends Controller
                'nama' => 'required|string|max:255',
                'email' => 'required|email|unique:users,email',
                'no_telepon' => 'required|string|max:15',
+               'jenis_kelamin' => 'required',
                'tanggal_lahir' => 'required|date',
            ]);
        
@@ -48,6 +49,7 @@ class SiswaControll extends Controller
                'nis' => $newNis,
                'nama' => $request->nama,
                'email' => $request->email,
+               'jenis_kelamin' => $request->jenis_kelamin,
                'no_telepon' => $request->no_telepon,
                'tanggal_lahir' => $request->tanggal_lahir,
            ]);

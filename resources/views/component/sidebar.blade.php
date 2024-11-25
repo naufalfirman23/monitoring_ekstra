@@ -32,12 +32,6 @@
                     Buat Absen
                     <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down text-white"></i></div>
                 </a>
-                <a class="nav-link collapsed text-white bg-light-hover" href="/guru/absen/rekap" data-bs-toggle="collapse" data-bs-target="#collapseEkstrakurikuler" aria-expanded="false" aria-controls="collapseEkstrakurikuler">
-                    <div class="nav-link-icon"><i class="fas fa-folder text-white"></i></div>
-                    Rekap Nilai
-                    <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down text-white"></i></div>
-                </a>
-                
             </div>
         </div>
     </nav>

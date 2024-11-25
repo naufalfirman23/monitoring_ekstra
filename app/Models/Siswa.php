@@ -16,6 +16,7 @@ class Siswa extends Model
         'id_user',  
         'tanggal_lahir', 
         'nis', 
+        'jenis_kelamin', 
     ];
 
 }
